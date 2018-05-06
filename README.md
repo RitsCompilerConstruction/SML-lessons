@@ -1,7 +1,13 @@
 # SML Lessons
 
-SML ( Standard ML ) は、関数型プログラミング言語です。  
-エディンバラ大学で開発された ML の標準仕様という位置付けです。
+SML ( Standard ML ) は、関数型プログラミング言語です。
+
+## 開発環境について
+
+| 名称 | 用途 |
+| :----: | ---- |
+| mlton | SML ソースコードのコンパイル |
+| smlnj | SML の対話的実行環境 |
 
 ## 開発環境構築
 
@@ -13,10 +19,10 @@ SML ( Standard ML ) は、関数型プログラミング言語です。
 
 2. 以下のコマンドを実行する
 
-```
-$ sudo apt-get update
-$ sudo apt-get install mlton
-```
+  ```
+  $ sudo apt-get update
+  $ sudo apt-get install mlton
+  ```
 
 ### macOS / Linux の場合
 
@@ -25,7 +31,20 @@ $ sudo apt-get install mlton
     [こちら](https://brew.sh/index_ja) を参照
 
 2. 以下のコマンドを実行する
+  
+  ```
+  $ brew install mlton
+  $ brew install smlnj
+  ```
+  
+3. smlnj の PATH を通す
 
-```
-$ brew install mlton
-```
+  smlnj については、インストールが完了しても PATH が通っていないので  
+  まだ ``sml`` コマンドで起動することができません。  
+  **実際の smlnj のインストール先ディレクトリを確認して PATH を通してください。**
+
+  Bash で PATH を通す方法がわからない場合は [こちら]() を参照してください。
+
+  ```
+  export PATH=/usr/local/smlnj/bin:$PATH
+  ```
