@@ -10,4 +10,8 @@ val println_int = (print o Int.toString);
 
 println "hello, world";
 
-println_int (a + 2);
+let
+  val b = 3
+in
+  println_int (a + b)
+end;
