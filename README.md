@@ -21,7 +21,7 @@ SML ( Standard ML ) は、関数型プログラミング言語です。
 
   ```
   $ sudo apt-get update
-  $ sudo apt-get install mlton
+  $ sudo apt-get install mlton-compiler
   ```
 
 ### macOS / Linux の場合
