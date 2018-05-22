@@ -7,8 +7,10 @@
   今の段階では、下の関数定義文の意味がわからなくても大丈夫です。
 *)
 
-fun print_int n = print ((Int.toString n) ^ "\n");
-fun print_real n = print ((Real.toString n) ^ "\n");
+fun print_int n =
+  print ((Int.toString n) ^ "\n");
+
+val print_real = (print o Real.toString);
 
 print_int ((1 + 3) * 4);
 print_real (7.2 / 4.8);  (* / 演算子の両辺は real 型 *)
