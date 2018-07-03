@@ -9,7 +9,7 @@ sig
   val find : tkey -> alist -> tval
 end
 
-structure Alist : ALIST =
+structure Alist :> ALIST =
 struct
   exception AlistExn
 
