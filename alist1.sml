@@ -8,6 +8,8 @@ sig
   val add : tkey * tval -> alist -> alist
   val find : tkey -> alist -> tval
 end
+  where type tkey = int
+  where type tval = string
 
 structure Alist :> ALIST =
 struct
